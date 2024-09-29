@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/quimba/Desktop/UnrealEngine/Engine/Build/BatchFiles/LinuxArm64'
+let g:netrw_dirhist_2='/home/quimba/Desktop/UnrealEngine/Engine/Build/BatchFiles/LinuxArm64/Toolchain'
+let g:netrw_dirhist_1='/home/quimba/Desktop/UnrealEngine/Engine/Binaries/DotNET/GitDependencies/linux-arm64'
+let g:netrw_dirhist_0='/home/quimba/.vim/pack/github/start/copilot.vim/plugin'
+let g:netrw_dirhist_9='/home/quimba/.vim/pack/github/start/copilot.vim'
+let g:netrw_dirhist_8='/home/quimba/.vim/pack/github/start'
+let g:netrw_dirhist_7='/home/quimba/.vim/pack/github'
+let g:netrw_dirhist_6='/home/quimba/.vim/pack'
+let g:netrw_dirhist_5='/home/quimba/.vim'
+let g:netrw_dirhist_4='/home/quimba/.vim/syntax'
