@@ -1,5 +1,8 @@
 " Quimba's VIM Configuration
 
+" set file type detection
+filetype plugin indent on
+
 " enable syntax hightlighting
 syntax on
 
@@ -21,3 +24,9 @@ set relativenumber
 set splitbelow
 set splitright
 
+set list
+set listchars=tab:>-
+
+" Python variables
+let g:python_highlight_all = 1
+let g:python_highlight_builtins = 1

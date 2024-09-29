@@ -68,16 +68,31 @@ bindkey -s '^o' 'lfcd\n'
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/quimba/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/quimba/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/quimba/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/quimba/miniconda3/bin:$PATH"
+    fi
+fi
+# unset __conda_setup
+# <<< conda initialize <<<
+
 # Load aliases and shortcuts if existent.
-[ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+[ -f "$HOME/.zsh/shortcutrc" ] && source "$HOME/.zsh/shortcutrc"
+[ -f "$HOME/.zsh/aliasrc" ] && source "$HOME/.zsh/aliasrc"
 
 # Use history substring search
-source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $HOME/.zsh/zsh-history-substring-search.zsh
 
 # Use autosuggestion
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.zsh/zsh-autosuggestions.zsh
 
 # Load zsh-syntax-highlighting; SHOULD BE LAST
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh/zsh-syntax-highlighting.zsh
 
